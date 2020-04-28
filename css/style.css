@@ -61,15 +61,19 @@
 }
 
 #animation2{
-    width 100px;
-    height: 100px;\
+    width: 100px;
+    height: 100px;
     background-color:red;
-    animation-name: secondAnimation
+    animation-name: secondAnimation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 /*secondly add key frame*/
 @keyframes secondAnimation {
     8% {background-color: red;}
-
+    20% {background-color: blueviolet;}
+    40% {background-color: orange;}
+    88% {background-color: aqua;}
+    60% {background-color: crimson;}
+    100% {background-color: black;}
 }
