@@ -1,3 +1,75 @@
-body{
+
+/**/
+#navigation ul{
+
+    /*remove bullet point*/
+    list-style-type: none ;
+
+    /*no space between ul and nav div*/
+
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+    border: red 1px;
+
+
+}
+#navigation li{
+
+    /* move text to center*/
+    text-align: center;
+
+    /*move all list items to one line*/
+    display: inline;
+
+}
+#navigation li a {
+    color: orange;
+    margin: 20px;
+
+    /*remove underscore ___for my hyper link*/
+    text-decoration: none;
+
+}
+#navigation li a:hover{
     background-color: red;
+    font-size: large;
+}
+
+#navigation li img{
+    width: 50px;
+    height: 50px;
+}
+
+/*animation*/
+/*1stly setup div setup*/
+#animation{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+/*    thirdly setup animation*/
+    animation-name: firstanimation;
+    animation-duration: 5s;
+}
+
+/*secondly add key frame*/
+@keyframes firstanimation {
+    /*in key fram will change from this to that*/
+    from {background-color: orange;}
+    to {background-color: chartreuse;}
+
+}
+
+#animation2{
+    width 100px;
+    height: 100px;\
+    background-color:red;
+    animation-name: secondAnimation
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/*secondly add key frame*/
+@keyframes secondAnimation {
+    8% {background-color: red;}
+
 }
