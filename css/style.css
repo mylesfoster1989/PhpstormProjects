@@ -61,19 +61,47 @@
 }
 
 #animation2{
+    /*absolute -- locate by scree*/
+    /*relative -- locate by previouse location*/
+    /*fixed -- screen but never change*/
+    position: relative;
     width: 100px;
     height: 100px;
     background-color:red;
     animation-name: secondAnimation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+
 }
 /*secondly add key frame*/
 @keyframes secondAnimation {
-    8% {background-color: red;}
-    20% {background-color: blueviolet;}
-    40% {background-color: orange;}
-    88% {background-color: aqua;}
-    60% {background-color: crimson;}
+    0% {background-color: red; left: 0px; top: 0px;font-size: 15px;}
+    20% {background-color: blueviolet; left: 400px; top: 0px; font-size: 50px;}
+    40% {background-color: orange; left: 400px; top: 400px; font-size: 100px;}
+    60% {background-color: aqua; left: 0px; top: 400px; font-size: 50px;}
+    80% {background-color: crimson; left: 0px; top:0px; font-size: 15px;}
     100% {background-color: black;}
+}
+
+#imageAnimation img{
+     transform: rotate 90 degrees
+    transform-origin: 50px 0%;
+
+    /*these 3 we must have other wise no link*/
+    animation-name: imageRotate
+    /*use animation name for key frames */
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+
+
+}
+
+/*@keyframes creates animation in css = 24 frames{*/
+@keyframes imageRotate {
+    /*link to animation name*/
+
+    from {transform: rotate(25deg);}
+        to {transform: rotate(359deg); transform: scale(2);}
+
+}
 }
