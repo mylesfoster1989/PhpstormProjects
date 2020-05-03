@@ -11,14 +11,30 @@
 }
 
 @keyframes movingDog {
-    0% {left: 1000px; top: 200px;font-size: 15px; font-family: Wingdings;}
+    10% {left: 1000px; top: 200px;font-size: 15px; font-family: Wingdings;}
     20% {left: 400px; top: 200px; font-size: 30px; font-family: "Yu Gothic UI Semilight";}
     40% {left: 400px; top: 400px; font-size: 35px; font-family: Arial;}
     60% {left: 100px; top: 400px; font-size: 50px; font-family: revert;}
-    80% {left: 1000px; top:200px; font-size: 15px; font-family: Haettenschweiler;}
+
+}
+#Dog2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    /*these 3 need to be done*/
+    animation-name: food;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes food {
+    10% {left: 1000px; top: 200px;}
+    20% {left: 400px; top: 200px;}
+    40% {left: 400px; top: 400px;}
+    60% {left: 100px; top: 400px;}
 
+}
 
 #blink{
     width: 2000px;
@@ -56,6 +72,8 @@ h1 {
     70% {background-color: orange; font-size: 50px; font-family: "Microsoft YaHei";}
     90% {background-color: blue;font-size: 80px; font-family: "Yu Gothic UI Semilight";}
     100% {background-color: pink; font-size: 88px; font-family: SimSun;}
+    from {transform: rotate(180deg);}
+    to {transform: rotate(360deg); transform: scale(1);}
 }
 
 
@@ -93,25 +111,30 @@ h1 {
     font-size: large;
 }
 
+#imageMenu img{
+    animation-name: imageRotate1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imageRotate1 {
+
+    from {transform: rotate(180deg);}
+    to {transform: rotate(360deg); transform: scale(1);}
+
+}
+
 #rotate img{
-
-    transform: rotate 360 degrees
-    transform-origin: 30px 50%;
-
-    /*these 3 we must have other wise no link*/
-    animation-name: imageRotate ;
-    /*use animation name for key frames */
-    animation-duration: 13s ;
+    animation-name: imageRotate;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 
 
 }
 
 @keyframes imageRotate {
-    /*link to animation name*/
 
     from {transform: rotate(180deg);}
     to {transform: rotate(360deg); transform: scale(1);}
 
-}
 }
