@@ -1,4 +1,3 @@
-
 /**/
 #navigation ul{
 
@@ -32,7 +31,7 @@
 
 }
 #navigation li a:hover{
-    background-color: red;
+    background-color: black;
     font-size: large;
 }
 
@@ -47,9 +46,10 @@
     width: 100px;
     height: 100px;
     background-color: blue;
-/*    thirdly setup animation*/
+    /*    thirdly setup animation*/
     animation-name: firstanimation;
-    animation-duration: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 /*secondly add key frame*/
@@ -84,13 +84,13 @@
 }
 
 #imageAnimation img{
-     transform: rotate 90 degrees
-    transform-origin: 50px 0%;
+    transform: rotate 90 degrees
+    transform-origin: 50px 50%;
 
     /*these 3 we must have other wise no link*/
-    animation-name: imageRotate
+    animation-name: imageRotate ;
     /*use animation name for key frames */
-    animation-duration: 5s ;
+    animation-duration: 10s ;
     animation-iteration-count: infinite;
 
 
@@ -100,8 +100,8 @@
 @keyframes imageRotate {
     /*link to animation name*/
 
-    from {transform: rotate(25deg);}
-        to {transform: rotate(359deg); transform: scale(2);}
+    from {transform: rotate(60deg);}
+    to {transform: rotate(100deg); transform: scale(2);}
 
 }
 }

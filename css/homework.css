@@ -1,0 +1,117 @@
+#Dog1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    /*these 3 need to be done*/
+    animation-name: movingDog;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movingDog {
+    0% {left: 1000px; top: 200px;font-size: 15px; font-family: Wingdings;}
+    20% {left: 400px; top: 200px; font-size: 30px; font-family: "Yu Gothic UI Semilight";}
+    40% {left: 400px; top: 400px; font-size: 35px; font-family: Arial;}
+    60% {left: 100px; top: 400px; font-size: 50px; font-family: revert;}
+    80% {left: 1000px; top:200px; font-size: 15px; font-family: Haettenschweiler;}
+}
+
+
+
+#blink{
+    width: 2000px;
+    height: 2000px;
+
+    animation-name: Blink;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes Blink {
+    10% {background-color: blue; font-size: 30px; font-family: "Berlin Sans FB";}
+    20% {background-color: green; font-size:20px; font-family: "Bauhaus 93";}
+    40% {background-color: white; font-size: 30px;font-family: Forte;}
+    60% {background-color: aqua; font-size: 50px; font-family: Wingdings;}
+    80% {background-color: red;font-size: 80px; font-family: "Yu Gothic UI Semilight";}
+    100% {background-color: olivedrab; font-size: 88px; font-family: SimSun;}
+}
+
+h1 {
+    background-color: yellow;
+    font-size: xx-large;
+
+}
+#h1 {
+    animation-name: h1;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes h1 {
+    20% {background-color: red; font-size: 30px; font-family: "Berlin Sans FB";}
+    30% {background-color: purple; font-size:20px; font-family: "Bauhaus 93";}
+    50% {background-color: green; font-size: 30px;font-family: Forte;}
+    70% {background-color: orange; font-size: 50px; font-family: "Microsoft YaHei";}
+    90% {background-color: blue;font-size: 80px; font-family: "Yu Gothic UI Semilight";}
+    100% {background-color: pink; font-size: 88px; font-family: SimSun;}
+}
+
+
+#imageMenu{
+
+    text-align: center;
+
+    position:fixed;
+
+    bottom: 0px;
+
+    width:100%;
+}
+
+#imageMenu ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+#imageMenu li{
+    display: inline;
+}
+
+#imageMenu img{
+    width: 50px;
+    height: 50px;
+}
+
+#imageMenu img:hover{
+    width: 200px;
+    height: 200px;
+}
+#imageMenu li a:hover{
+    background-color: black;
+    font-size: large;
+}
+
+#rotate img{
+
+    transform: rotate 360 degrees
+    transform-origin: 30px 50%;
+
+    /*these 3 we must have other wise no link*/
+    animation-name: imageRotate ;
+    /*use animation name for key frames */
+    animation-duration: 13s ;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes imageRotate {
+    /*link to animation name*/
+
+    from {transform: rotate(180deg);}
+    to {transform: rotate(360deg); transform: scale(1);}
+
+}
+}
