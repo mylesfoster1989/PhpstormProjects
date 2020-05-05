@@ -30,11 +30,20 @@ function moveImage() {
     y = 10;     //to
     speed = Number(document.getElementById("speedInput").value);
     // create a function in loop it each half second
+    setInterval(function () {
+        if (x <500 && y <= 10){
+            x = x + speed; //move right
+        }
+        if (x >= 500 && y < 500){
+            y = y + speed; //move down
+        }
+        if (x > 10 && y >= 500){
+            x = x - speed; //move left
+        }
+        if (x <= 10 && y >10){
+            y = y - speed; //move up
+        }
 
-        x=x+speed;
-        y=y+speed;
-        console.log("x=",x);
-        console.log("y=",y);
         image.style.left = x+"px";
         image.style.top = y+"px";
     }, 500);
